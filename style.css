@@ -42,15 +42,18 @@ h2 ul {
 
 .imgDiv {
   text-align: center;
-  width: 40%;
+  width: 60%;
   display: inline-block;
 }
 
 .text {
-  width: 60%;
-  position: relative;
-  right: 0px;
   display: inline-block;
+  position: relative;
+  top: -330px;
+}
+
+li {
+  font-size: 22px;
 }
 
 footer {
@@ -58,19 +61,47 @@ footer {
   width: 100%;
   color: white;
   text-align: center;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   position: fixed;
   bottom: 0px;
-  margin-top: 20px;
 }
 
 .footerImg {
   filter: invert(100%);
-  height: 50px;
+  height: 30px;
 }
 
-/* body {
-  margin-left: 10px;
-  margin-right: 10px;
-} */
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 32px;
+  }
+  .navImg {
+    height: 50px;
+  }
+  main {
+    position: relative;
+    top: 120px;
+  }
+  .text {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50px;
+  }
+  .imgDiv {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .imgMe {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 28px;
+  }
+}
